@@ -1,1 +1,57 @@
-Ym9keSB7CiAgICBkaXNwbGF5OiBmbGV4OwogICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgICBhbGlnbi1pdGVtczogY2VudGVyOwogICAgaGVpZ2h0OiAxMDB2aDsKICAgIG1hcmdpbjogMDsKICAgIGJhY2tncm91bmQtY29sb3I6ICNmMGYwZjA7Cn0KCi5jYWxjdWxhdG9yIHsKICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7CiAgICBib3JkZXItcmFkaXVzOiA1cHg7CiAgICBib3gtc2hhZG93OiAwIDJweCA1cHggcmdiYSgwLCAwLCAwLCAwLjEpOwogICAgd2lkdGg6IDMwMHB4Owp9CgouZGlzcGxheSB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjIyOwogICAgcGFkZGluZzogMjBweDsKICAgIHRleHQtYWxpZ246IHJpZ2h0Owp9CgouZGlzcGxheSBpbnB1dCB7CiAgICB3aWR0aDogMTAwJTsKICAgIGJvcmRlcjogbm9uZTsKICAgIGJhY2tncm91bmQ6IG5vbmU7CiAgICBjb2xvcjogd2hpdGU7CiAgICBmb250LXNpemU6IDQ4cHg7CiAgICB0ZXh0LWFsaWduOiByaWdodDsKfQoKLmJ1dHRvbnMgewogICAgZGlzcGxheTogZ3JpZDsKICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDQsIDFmcik7Cn0KCmJ1dHRvbiB7CiAgICBib3JkZXI6IDFweCBzb2xpZCAjY2NjOwogICAgcGFkZGluZzogMjBweDsKICAgIGZvbnQtc2l6ZTogMjRweDsKICAgIGN1cnNvcjogcG9pbnRlcjsKICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7Cn0KCmJ1dHRvbjpob3ZlciB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjBmMGYwOwp9CgouZXF1YWwgewogICAgZ3JpZC1jb2x1bW46IHNwYW4gMjsKICAgIGJhY2tncm91bmQtY29sb3I6ICNmMGFkNGU7CiAgICBjb2xvcjogd2hpdGU7Cn0KCi5lcXVhbDpob3ZlciB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWM5NzFmOwp9
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.display {
+    background-color: #222;
+    padding: 20px;
+    text-align: right;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 48px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.equal {
+    grid-column: span 2;
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #ec971f;
+}

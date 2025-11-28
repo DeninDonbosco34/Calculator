@@ -1,1 +1,21 @@
-Y29uc3QgcmVzdWx0SW5wdXQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncmVzdWx0Jyk7CgpmdW5jdGlvbiBhcHBlbmRWYWx1ZSh2YWx1ZSkgewogICAgcmVzdWx0SW5wdXQudmFsdWUgKz0gdmFsdWU7Cn0KCmZ1bmN0aW9uIGNsZWFyUmVzdWx0KCkgewogICAgcmVzdWx0SW5wdXQudmFsdWUgPSAnJzsKfQoKZnVuY3Rpb24gZGVsZXRlTGFzdCgpIHsKICAgIHJlc3VsdElucHV0LnZhbHVlID0gcmVzdWx0SW5wdXQudmFsdWUuc2xpY2UoMCwgLTEpOwp9CgpmdW5jdGlvbiBjYWxjdWxhdGVSZXN1bHQoKSB7CiAgICB0cnkgewogICAgICAgIHJlc3VsdElucHV0LnZhbHVlID0gZXZhbChyZXN1bHRJbnB1dC52YWx1ZSk7CiAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgIHJlc3VsdElucHV0LnZhbHVlID0gJ0Vycm9yJzsKICAgIH0KfQ==
+const resultInput = document.getElementById('result');
+
+function appendValue(value) {
+    resultInput.value += value;
+}
+
+function clearResult() {
+    resultInput.value = '';
+}
+
+function deleteLast() {
+    resultInput.value = resultInput.value.slice(0, -1);
+}
+
+function calculateResult() {
+    try {
+        resultInput.value = eval(resultInput.value);
+    } catch (error) {
+        resultInput.value = 'Error';
+    }
+}
